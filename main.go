@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 
-	"github.com/digitalcz/terraform-provider-zabbix/internal"
+	"github.com/DigitalSolutionsCZ/terraform-provider-zabbix/internal"
 	"github.com/hashicorp/terraform-plugin-sdk/v2/plugin"
 )
 

@@ -1,4 +1,4 @@
-module github.com/digitalcz/terraform-provider-zabbix
+module github.com/DigitalSolutionsCZ/terraform-provider-zabbix
 
 go 1.23.0
 

@@ -57,7 +57,9 @@ func Provider() *schema.Provider {
 				Description: "Skip SSL certificate verification.",
 			},
 		},
-		ResourcesMap:         map[string]*schema.Resource{},
+		ResourcesMap: map[string]*schema.Resource{
+			"zabbix_host": resourceHost(),
+		},
 		DataSourcesMap:       map[string]*schema.Resource{},
 		ConfigureContextFunc: configureProvider,
 	}

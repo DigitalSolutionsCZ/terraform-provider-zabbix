@@ -6,7 +6,7 @@ body:
         
         Thanks for suggesting an idea for Zabbix!
 
-        Before opening a new idea or feature request, make sure that we do not have any duplicates already open. You can ensure this by [searching this discussion cagetory](https://github.com/digitalcz/terraform-provider-zabbix/discussions/categories/ideas). If there is a duplicate, please add a comment to the existing idea instead.
+        Before opening a new idea or feature request, make sure that we do not have any duplicates already open. You can ensure this by [searching this discussion cagetory](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/discussions/categories/ideas). If there is a duplicate, please add a comment to the existing idea instead.
         
         **DO NOT FILE DUPLICATE REQUESTS.**
 

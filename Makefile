@@ -18,7 +18,7 @@ help:
 	@echo "  o-fmt-check            Check formatting of OpenTofu files"
 	@echo "  o-fmt                  Format OpenTofu files"
 	@echo "  up                     Start Docker Compose services"
-	@echo "  launch                 Open https://localhost:80 in default browser"
+	@echo "  launch                 Open https://localhost:8080 in default browser"
 	@echo "  down                   Stop Docker Compose services"
 	@echo "  swarm-init             Initialize Docker Swarm (if not already active)"
 	@echo "  swarm-leave            Leave Docker Swarm (forcefully, if active)"
@@ -121,7 +121,7 @@ up:
 
 .PHONY: launch
 launch:
-	@ZABBIX_HOST=$${ZABBIX_HOST:-'localhost:80'} ; \
+	@ZABBIX_HOST=$${ZABBIX_HOST:-'localhost:8080'} ; \
 	URL=$${URL:-http://$${ZABBIX_HOST}} ; \
 	echo "Opening $${URL} ..." ; \
 	OS=$$(uname | tr '[:upper:]' '[:lower:]') ; \
