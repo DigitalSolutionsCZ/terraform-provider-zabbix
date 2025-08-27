@@ -135,7 +135,7 @@ See our [examples](./docs/resources/) per resources in docs.
 ## 🧩 Supported Resources
 | Resource                                   | Documentation                                                                                  | Example                                              | Status | Terraform Import / Create => Update | E2E Tests |
 |--------------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------|--------|-------------------------------------|-----------|
-| `zabbix_host`                              | [host.md](docs/resources/host.md)                                                              | [example](examples/host/)                            | ✅     | ✅ / ✅                             | ✅        |
+| `zabbix_host`                              | [host.md](docs/resources/host.md)                                                              | [example](examples/host/)                            | ✅     | ❌ / ❌                             | ✅        |
 
 #### ℹ️ Note on Create ⇒ Update Behavior
 
