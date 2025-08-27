@@ -28,7 +28,7 @@ jobs:
         run: |
           for i in {1..30}; do
             docker ps
-            if curl -sSf http://localhost:8080/api_jsonrpc.php >/dev/null; then
+            if curl -sSf http://localhost:8080/ >/dev/null; then
               echo "Zabbix API is up!"
               exit 0
             fi
