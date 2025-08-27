@@ -27,7 +27,7 @@ jobs:
       - name: Show OpenTofu version
         run: tofu version
 
-      - name: Patch main.tf files to use opentofu name of Zabbix Terraform provider
+      - name: Patch main.tf files to use opentofu name of Zabbix OpenTofu provider
         run: |
           find examples -name "main.tf" -exec sed -i 's|source *= *"DigitalSolutionsCZ/zabbix"|source = "digitalsolutionscz/zabbix"|' {} +
 
