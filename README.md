@@ -33,7 +33,7 @@
 # Zabbix Terraform Provider
 A [Terraform](https://www.terraform.io) provider to manage [Zabbix](https://www.zabbix.com/) resources via its API using Terraform.
 
-It supports provisioning and configuration of Zabbix users and will be extended to support other objects such as teams, stacks, endpoints, and access control.
+It supports provisioning and configuration of Zabbix users and will be extended to support other objects such as hosts, templates, triggers, users etc.
 
 ## Requirements
 - Terraform v0.13+
