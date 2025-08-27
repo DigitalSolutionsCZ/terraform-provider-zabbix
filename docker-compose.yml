@@ -7,8 +7,8 @@ services:
       POSTGRES_DB: zabbix
       POSTGRES_USER: zabbix
       POSTGRES_PASSWORD: password
-    volumes:
-      - ./zabbix_data:/var/lib/postgresql/data
+    # volumes:
+    #  - ./zabbix_data:/var/lib/postgresql/data
     networks:
       - zabbix-net
 
@@ -62,8 +62,8 @@ services:
     networks:
       - zabbix-net
 
-volumes:
-  zabbix_data:
+# volumes:
+  # zabbix_data:
   # zabbix_server_data:
 
 networks:

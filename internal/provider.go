@@ -102,8 +102,7 @@ func configureProvider(ctx context.Context, d *schema.ResourceData) (interface{}
 				"username": user,
 				"password": password,
 			},
-			"id":   1,
-			"auth": nil,
+			"id": 1,
 		}
 
 		token, err := client.callLogin(loginPayload)

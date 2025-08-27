@@ -4,10 +4,17 @@ variable "zabbix_endpoint" {
   description = "Zabbix API endpoint URL"
 }
 
-variable "zabbix_api_token" {
+variable "zabbix_api_user" {
   type        = string
-  default     = "d4719154c1a1891852acd2e2948e3f9bcdd98319d251c746c610c491cb6bba04"
-  description = "Zabbix API token"
+  default     = "Admin"
+  description = "Zabbix user"
+  sensitive   = true
+}
+
+variable "zabbix_api_password" {
+  type        = string
+  default     = "zabbix"
+  description = "Zabbix password of user"
   sensitive   = true
 }
 

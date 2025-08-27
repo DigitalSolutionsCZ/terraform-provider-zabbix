@@ -7,6 +7,7 @@ terraform {
 }
 
 provider "zabbix" {
-  endpoint  = var.zabbix_endpoint
-  api_token = var.zabbix_api_token
+  endpoint     = var.zabbix_endpoint
+  api_user     = var.zabbix_api_user
+  api_password = var.zabbix_api_password
 }
