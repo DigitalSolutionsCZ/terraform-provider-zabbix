@@ -7,7 +7,7 @@ It supports provisioning and configuration of Zabbix users and will be extended 
 | Provider       | Provider Support Status              |
 |----------------|--------------------------------------|
 | [Terraform](https://registry.terraform.io/providers/DigitalSolutionsCZ/zabbix/latest)      | ![Done](https://img.shields.io/badge/status-done-brightgreen)           |
-| [OpenTofu](https://search.opentofu.org/provider/DigitalSolutionsCZ/zabbix/latest)       | ![Done](https://img.shields.io/badge/status-done-brightgreen) |
+| [OpenTofu](https://search.opentofu.org/provider/digitalsolutionscz/zabbix/latest)       | ![Done](https://img.shields.io/badge/status-done-brightgreen) |
 
 ## ⚙️ Example Provider Configuration
 

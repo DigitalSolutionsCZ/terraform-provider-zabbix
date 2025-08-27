@@ -7,7 +7,7 @@
     <img src="https://raw.githubusercontent.com/zabbix/zabbix/refs/heads/master/misc/images/docs/zabbix_logo.svg" alt="terraform-provider-zabbix" width="200">
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://search.opentofu.org/provider/DigitalSolutionsCZ/zabbix/latest">
+  <a href="https://search.opentofu.org/provider/digitalsolutionscz/zabbix/latest">
     <img src="https://raw.githubusercontent.com/opentofu/brand-artifacts/main/full/transparent/SVG/on-dark.svg#gh-dark-mode-only" alt="zabbix-provider-opentofu" width="200">
   </a>
   <h3 align="center" style="font-weight: bold">Terraform Provider for Zabbix</h3>
@@ -49,7 +49,7 @@ make build
 | Provider                                                                                   | Provider Support Status   |
 |--------------------------------------------------------------------------------------------|---------------------------|
 | [Terraform](https://registry.terraform.io/providers/DigitalSolutionsCZ/zabbix/latest)      | ✅                        |
-| [OpenTofu](https://search.opentofu.org/provider/DigitalSolutionsCZ/zabbix/latest)          | ✅                        |
+| [OpenTofu](https://search.opentofu.org/provider/digitalsolutionscz/zabbix/latest)          | ✅                        |
 
 
 ## Example Provider Configuration
