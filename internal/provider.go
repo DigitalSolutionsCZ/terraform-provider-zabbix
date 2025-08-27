@@ -57,7 +57,9 @@ func Provider() *schema.Provider {
 				Description: "Skip SSL certificate verification.",
 			},
 		},
-		ResourcesMap:         map[string]*schema.Resource{},
+		ResourcesMap: map[string]*schema.Resource{
+			"zabbix_host": resourceHost(),
+		},
 		DataSourcesMap:       map[string]*schema.Resource{},
 		ConfigureContextFunc: configureProvider,
 	}
@@ -100,8 +102,7 @@ func configureProvider(ctx context.Context, d *schema.ResourceData) (interface{}
 				"username": user,
 				"password": password,
 			},
-			"id":   1,
-			"auth": nil,
+			"id": 1,
 		}
 
 		token, err := client.callLogin(loginPayload)

@@ -3,7 +3,7 @@
     <img src="https://camo.githubusercontent.com/cdda8928975712cecce7be8b6a1506e3b327b1643cd3391dcf40515e25b54f73/68747470733a2f2f7777772e6461746f636d732d6173736574732e636f6d2f323838352f313733313337333331302d7465727261666f726d5f77686974652e737667" alt="Terraform Logo" width="200">
   </a>
   &nbsp;&nbsp;&nbsp;
-  <a href="https://github.com/digitalcz/terraform-provider-zabbix">
+  <a href="https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix">
     <img src="https://raw.githubusercontent.com/zabbix/zabbix/refs/heads/master/misc/images/docs/zabbix_logo.svg" alt="terraform-provider-zabbix" width="200">
   </a>
   &nbsp;&nbsp;&nbsp;
@@ -12,28 +12,28 @@
   </a>
   <h3 align="center" style="font-weight: bold">Terraform Provider for Zabbix</h3>
   <p align="center">
-    <a href="https://github.com/digitalcz/terraform-provider-zabbix/graphs/contributors">
-      <img alt="Contributors" src="https://img.shields.io/github/contributors/digitalcz/terraform-provider-zabbix">
+    <a href="https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/graphs/contributors">
+      <img alt="Contributors" src="https://img.shields.io/github/contributors/DigitalSolutionsCZ/terraform-provider-zabbix">
     </a>
     <a href="https://golang.org/doc/devel/release.html">
-      <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/digitalcz/terraform-provider-zabbix">
+      <img alt="GitHub go.mod Go version" src="https://img.shields.io/github/go-mod/go-version/DigitalSolutionsCZ/terraform-provider-zabbix">
     </a>
-    <a href="https://github.com/digitalcz/terraform-provider-zabbix/actions?query=workflow%3Arelease">
-      <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/digitalcz/terraform-provider-zabbix/release.yml?tag=latest&label=release">
+    <a href="https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/actions?query=workflow%3Arelease">
+      <img alt="GitHub Workflow Status" src="https://img.shields.io/github/actions/workflow/status/DigitalSolutionsCZ/terraform-provider-zabbix/release.yml?tag=latest&label=release">
     </a>
-    <a href="https://github.com/digitalcz/terraform-provider-zabbix/releases">
-      <img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/digitalcz/terraform-provider-zabbix?include_prereleases">
+    <a href="https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/releases">
+      <img alt="GitHub release (latest by date including pre-releases)" src="https://img.shields.io/github/v/release/DigitalSolutionsCZ/terraform-provider-zabbix?include_prereleases">
     </a>
   </p>
   <p align="center">
-    <a href="https://github.com/digitalcz/terraform-provider-zabbix/tree/main/docs"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/tree/main/docs"><strong>Explore the docs »</strong></a>
   </p>
 </p>
 
 # Zabbix Terraform Provider
 A [Terraform](https://www.terraform.io) provider to manage [Zabbix](https://www.zabbix.com/) resources via its API using Terraform.
 
-It supports provisioning and configuration of Zabbix users and will be extended to support other objects such as teams, stacks, endpoints, and access control.
+It supports provisioning and configuration of Zabbix users and will be extended to support other objects such as hosts, templates, triggers, users etc.
 
 ## Requirements
 - Terraform v0.13+
@@ -135,7 +135,7 @@ See our [examples](./docs/resources/) per resources in docs.
 ## 🧩 Supported Resources
 | Resource                                   | Documentation                                                                                  | Example                                              | Status | Terraform Import / Create => Update | E2E Tests |
 |--------------------------------------------|------------------------------------------------------------------------------------------------|------------------------------------------------------|--------|-------------------------------------|-----------|
-| `zabbix_host`                              | [host.md](docs/resources/host.md)                                                              | [example](examples/host/)                            | ✅     | ✅ / ✅                             | ✅        |
+| `zabbix_host`                              | [host.md](docs/resources/host.md)                                                              | [example](examples/host/)                            | ✅     | ❌ / ❌                             | ✅        |
 
 #### ℹ️ Note on Create ⇒ Update Behavior
 
@@ -149,14 +149,14 @@ Some resources support a "Create-or-Update" mechanism, when this behavior is imp
 ### 💡 Missing a resource?
 Is there a Zabbix resource you'd like to see supported?
 
-👉 [Open an issue](https://github.com/digitalcz/terraform-provider-zabbix/issues/new?template=feature_request.md) and we’ll consider it for implementation — or even better, submit a [Pull Request](https://github.com/digitalcz/terraform-provider-zabbix/pulls) to contribute directly!
+👉 [Open an issue](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/issues/new?template=feature_request.md) and we’ll consider it for implementation — or even better, submit a [Pull Request](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/pulls) to contribute directly!
 
 📘 See [CONTRIBUTING.md](./.github/CONTRIBUTING.md) for guidelines.
 
 ## 💬 Community & Feedback
 Have questions, suggestions or want to contribute ideas?  
 Want to report issues, submit pull requests or browse the source code?  
-Check out the [GitHub Repository](https://github.com/digitalcz/terraform-provider-zabbix) for this provider.
+Check out the [GitHub Repository](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix) for this provider.
 
 ## ✅ Daily End-to-End Testing
 To ensure maximum reliability and functionality of this provider, **automated end-to-end tests are executed every day** via GitHub Actions.
@@ -178,16 +178,16 @@ To test the provider locally, start the Zabbix Web UI using Docker Compose:
 ```sh
 make up
 ```
-Then open `http://localhost:80` in your browser.
+Then open `http://localhost:8080` in your browser.
 
 ### 🔐 Predefined Test Credentials for Login (use also E2E tests)
 Thanks to the `zabbix_data` directory included in this repository, a test user and token are preloaded when you launch the local Zabbix instance:
 
 | **Field**    | **Value**                                                                  |
 |--------------|----------------------------------------------------------------------------|
-| Username     | `admin`                                                                    |
-| Password     | `password123456789`                                                        |
-| API Token    | `ptr_xrP7XWqfZEOoaCJRu5c8qKaWuDtVc2Zb07Q5g22YpS8=`                         |
+| Username     | `Admin`                                                                    |
+| Password     | `zabbix`                                                                   |
+| API Token    | `d4719154c1a1891852acd2e2948e3f9bcdd98319d251c746c610c491cb6bba04`         |
 
 You can now apply your Terraform templates and observe changes live in the UI.
 
@@ -215,11 +215,11 @@ terraform {
 Now you're ready to test your provider against the local Zabbix instance.
 
 ## Roadmap
-See the [open issues](https://github.com/digitalcz/terraform-provider-zabbix/issues) for a list of proposed features (and known issues). See [CONTRIBUTING](./.github/CONTRIBUTING.md) for more information.
+See the [open issues](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/issues) for a list of proposed features (and known issues). See [CONTRIBUTING](./.github/CONTRIBUTING.md) for more information.
 
 ## License
 This module is 100% Open Source and is distributed under the MIT License.  
-See the [LICENSE](https://github.com/digitalcz/terraform-provider-zabbix/blob/main/LICENSE) file for more information.
+See the [LICENSE](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/blob/main/LICENSE) file for more information.
 
 
 ## Acknowledgements

@@ -19,10 +19,24 @@ jobs:
 
       - name: 🩹 Patch main.tf files to use local provider
         run: |
-          find e2e-tests -name "main.tf" -exec sed -i 's|source *= *"digitalcz/zabbix"|source = "localdomain/local/zabbix"|' {} +
+          find e2e-tests -name "main.tf" -exec sed -i 's|source *= *"DigitalSolutionsCZ/zabbix"|source = "localdomain/local/zabbix"|' {} +
 
       - name: 🐳 Start Zabbix and zabbix agent via Docker Compose
         run: make up
+
+      - name: Wait for Zabbix
+        run: |
+          for i in {1..30}; do
+            docker ps
+            if curl -sSf http://localhost:8080/ >/dev/null; then
+              echo "Zabbix API is up!"
+              exit 0
+            fi
+            echo "Waiting for Zabbix API..."
+            sleep 5
+          done
+          echo "Zabbix API did not start in time"
+          exit 1
 
       - name: ⬇️ Install Terraform
         uses: hashicorp/setup-terraform@v3

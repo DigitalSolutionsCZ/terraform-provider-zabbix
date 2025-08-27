@@ -27,6 +27,3 @@ dev.tfrc
 backup.tar.gz
 generated.tf
 imported.json
-
-# Zabbix
-zabbix_data/

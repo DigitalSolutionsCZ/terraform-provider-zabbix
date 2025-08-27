@@ -7,7 +7,7 @@ body:
       value: |
         # Welcome!
 
-        The issue tracker is for reporting bugs. If you have an [idea for a new feature](https://github.com/digitalcz/terraform-provider-zabbix/discussions/categories/ideas) or a [general question about Zabbix Terraform provider](https://github.com/digitalcz/terraform-provider-zabbix/discussions/categories/help) please post in our [GitHub Discussions](https://github.com/digitalcz/terraform-provider-zabbix/discussions).
+        The issue tracker is for reporting bugs. If you have an [idea for a new feature](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/discussions/categories/ideas) or a [general question about Zabbix Terraform provider](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/discussions/categories/help) please post in our [GitHub Discussions](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/discussions).
 
         Please note that we only provide support for current versions of Zabbix.
 
@@ -18,9 +18,9 @@ body:
     attributes:
       label: Before you start please confirm the following.
       options:
-        - label: Yes, I've searched similar issues on [GitHub](https://github.com/digitalcz/terraform-provider-zabbix/issues).
+        - label: Yes, I've searched similar issues on [GitHub](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/issues).
           required: true
-        - label: Yes, I've checked whether this issue is covered/solved in the Zabbix Terraform provider [discussions](https://github.com/digitalcz/terraform-provider-zabbix/discussions/categories/help).
+        - label: Yes, I've checked whether this issue is covered/solved in the Zabbix Terraform provider [discussions](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbix/discussions/categories/help).
           required: true
 
   - type: markdown
