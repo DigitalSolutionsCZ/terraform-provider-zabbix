@@ -1,7 +1,7 @@
 terraform {
   required_providers {
     zabbix = {
-      source = "localdomain/local/zabbix"
+      source = "DigitalSolutionsCZ/zabbix"
     }
   }
 }
