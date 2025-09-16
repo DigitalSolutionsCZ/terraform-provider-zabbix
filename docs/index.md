@@ -88,6 +88,7 @@ export ZABBIX_SKIP_SSL_VERIFY=true
 | Resource                                       | Status                                                                |
 |------------------------------------------------|-----------------------------------------------------------------------|
 | `zabbix_host`                                  | ![Done](https://img.shields.io/badge/status-done-brightgreen)         |
+| `zabbix_discovery`                             | ![Done](https://img.shields.io/badge/status-done-brightgreen)         |
 
 ---
 

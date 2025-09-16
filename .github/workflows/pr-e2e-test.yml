@@ -48,7 +48,7 @@ jobs:
 
       - name: 🧪 Run Terraform E2E tests
         run: |
-          FULL_CYCLE_DIRS=("host")
+          FULL_CYCLE_DIRS=("host" "discovery")
 
           for dir in "${FULL_CYCLE_DIRS[@]}"; do
             if [ -d "e2e-tests/$dir" ]; then
