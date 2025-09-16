@@ -1,5 +1,5 @@
 # Zabbix Terraform Provider
-A [Terraform](https://www.terraform.io) provider to manage [Zabbix](https://www.zabbix.com/) resources via its API using Terraform.
+A [Terraform](https://developer.hashicorp.com/terraform) provider to manage [Zabbix](https://www.zabbix.com/) resources via its API using Terraform.
 
 It supports provisioning and configuration of Zabbix users and will be extended to support other objects such as hosts, templates, triggers, users etc.
 
@@ -117,7 +117,7 @@ See the [LICENSE](https://github.com/DigitalSolutionsCZ/terraform-provider-zabbi
 
 
 ## Acknowledgements
-- [HashiCorp Terraform](https://www.hashicorp.com/products/terraform)
+- [HashiCorp Terraform](https://www.hashicorp.com/en/products/terraform)
 - [Zabbix](https://www.zabbix.com/)
 - [OpenTofu](https://opentofu.org/)
 - [Docker](https://www.docker.com/)
